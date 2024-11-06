@@ -10,3 +10,7 @@ server:
 
 client:
   password: my-password
+
+logging:
+  level:
+    org.springframework.security: DEBUG

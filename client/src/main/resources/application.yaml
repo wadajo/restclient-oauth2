@@ -8,9 +8,13 @@ spring:
           hotels-client:
             provider: hotels-provider
             client-id: hotels-client
-            client-secret: hotels-secret
+            client-secret: my-password
             authorization-grant-type: client_credentials
             scope: read
         provider:
           hotels-provider:
             token-uri: http://localhost:9000/oauth2/token
+
+logging:
+  level:
+    org.springframework.security: DEBUG
