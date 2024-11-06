@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: client
+  security:
+    oauth2:
+      client:
+        registration:
+          hotels-client:
+            provider: hotels-provider
+            client-id: hotels-client
+            client-secret: hotels-secret
+            authorization-grant-type: client_credentials
+            scope: read
+        provider:
+          hotels-provider:
+            token-uri: http://localhost:9000/oauth2/token
