@@ -20,6 +20,10 @@ public class HotelsController {
         return this.restClient
                 .get()
                 .uri("http://localhost:8081/hotels")
+                /*
+                If you set a breakpoint inside the authenticate method of JwtAuthenticationProvider class,
+                you will see the actual JWT token that's being validated
+                 */
                 .attributes(clientRegistrationId("hotels-client"))
                 .retrieve()
                 .body(String[].class);

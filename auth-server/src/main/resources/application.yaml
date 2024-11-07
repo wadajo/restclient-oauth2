@@ -9,7 +9,7 @@ server:
   port: 9000
 
 client:
-  password: my-password
+  secret: "{bcrypt}$2a$10$KvZEC7QF/apVZANTewB3q.Z/XMZFKPTNV6ez/NLdsYG20OJZy71Hy"
 
 logging:
   level:
