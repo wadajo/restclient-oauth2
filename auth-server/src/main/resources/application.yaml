@@ -5,6 +5,17 @@ spring:
     oauth2:
       authorizationserver:
         issuer: http://localhost:9000
+        client:
+          hotels-client:
+            registration:
+              client-id: hotels-client
+              client-secret: "{bcrypt}$2a$10$KvZEC7QF/apVZANTewB3q.Z/XMZFKPTNV6ez/NLdsYG20OJZy71Hy"
+              client-authentication-methods:
+                - client_secret_basic
+              authorization-grant-types:
+                - client_credentials
+              scopes:
+                - read
 server:
   port: 9000
 
